@@ -80,6 +80,11 @@ public class LabelController {
         Label label1 = labelService.update(label);
         return new Result(true,StatusCode.OK,label);
     }
+    @PostMapping("/search/{page}/{size}")
+    public Result search(@RequestBody Label label,@PathVariable("page") Integer page,@PathVariable Integer size){
+
+        return null;
+    }
 
 
 }
